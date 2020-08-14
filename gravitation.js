@@ -29,8 +29,9 @@ function setup() {
   // Calc the largest vector possible based on canvas size
   maxDistance = dist(0, 0, width, height);
   multiplierSlider = createSlider(-1.5, 1.5, 0, 0.05);
-  multiplierSlider.position(20, 10);
+  multiplierSlider.position(20, 30);
   multiplierSlider.style('width', width - 40);
+  multiplierSlider.class('slider');
   currentColor = color("#6e04a9");
   fill(255);
   strokeColor = color(255);
